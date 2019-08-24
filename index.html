@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./scss/index.css">
+    <title>gruppa-guta</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="top-header">
+            <div class="container">
+                <div class="top-header__inner">
+                    <a href="#">Режим работы</a>
+                    <a href="#">Правила посещения</a>
+                </div>
+            </div>
+        </div>
+        <div class="bot-header">
+            <div class="container">
+                <div class="bot-header__inner">
+                    <div class="bot-header__logo">
+                        <a href="#">LOGOTYPE</a>
+                    </div>
+                    <a href="#" class="bot-header__burger-menu"></a>
+                    <nav class="bot-header__menu">
+                        <a class="bot-header__menu-item" href="#">Меню</a>
+                        <a class="bot-header__menu-item" href="#">Меню</a>
+                        <a class="bot-header__menu-item" href="#">Меню</a>
+                        <a class="bot-header__menu-item" href="#">Меню</a>
+                        <a class="bot-header__menu-item" href="#">Меню</a>
+                        <a class="bot-header__menu-item" href="#">Меню</a>
+                        <div class="bot-header__register-login_mobile">
+                            <a href="#">Регистрация</a>
+                            <a href="#">Вход</a>
+                        </div>
+                        <div class="top-header__inner_mobile">
+                            <a href="#">Режим работы</a>
+                            <a href="#">Правила посещения</a>
+                        </div>
+                    </nav>
+                    <div class="bot-header__register-login">
+                        <a href="#">Регистрация</a>
+                        <a href="#">Вход</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="slider">
+        <div class="fotorama" id="fotorama" data-autoplay="false">
+            <!-- <img src="./images/slide_1.jpg">
+            <img src="./images/slide_2.jpg">
+            <img src="./images/slide_3.jpg"> -->
+            <div data-img="./images/slide_1.jpg">
+                <div class="container">
+                    <div class="slide__text">
+                        <span>анимация</span>
+                        <h2>Подготовка спрайтов для анимации в Unity</h2>
+                        <p>Спрайты должны немного отличаться друг от друга, чтобы было заметно движение.</p>
+                    </div>
+                </div>
+            </div>
+            <div data-img="./images/slide_2.jpg">2</div>
+            <div data-img="./images/slide_3.jpg">3</div>
+        </div>
+    </section>
+
+    <section class="about-company">
+        <div class="container">
+            <div class="about-company__inner">
+                <div class="about-company__separator">
+                    <a class="about-company__title" href="#">о компании</a>
+                    <p>Что-то более продвинутое делается с помощью покадровой анимации — когда для разных состояний
+                        объекта (стоит, идет, в прыжке, атакует) создается несколько спрайтов (двумерное изображение),
+                        которые сменяют друг друга с определенным интервалом.</p>
+                </div>
+                <a class="about-company__more-details" href='#'><span>подробнее </span></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="news">
+        <div class="container">
+            <div class="news__inner">
+                <div class="news__top">
+                    <a href="#" class="news__title">
+                        Новости
+                    </a>
+                    <a href="#" class="news__all-news">Все новости</a>
+                </div>
+                <div class="news__images">
+                    <a href="" class="news__item item-1"></a>
+                    <a href="" class="news__item item-2"></a>
+                    <a href="" class="news__item item-3"></a>
+                </div>
+                <div class="news__images news__images_disable">
+                    <a href="" class="news__item item-4"></a>
+                    <a href="" class="news__item item-5"></a>
+                    <a href="" class="news__item item-6"></a>
+                </div>
+                <div class="news__show-more">
+                    <a class="news__show-more-btn" href="#">показать еще</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="mailing">
+        <div class="container">
+            <div class="mailing__inner">
+                <div class="mailing__top-form">
+                    <div class="mailing__rss"></div>
+                    <span>подпишитесь на рассылку</span>
+                    <div></div>
+                </div>
+                <form class="form">
+                    <input type="text" class="form__name" placeholder="Имя">
+                    <input type="text" class="form__email" placeholder="example@mail.com">
+                    <input type="text" class="form__comment" placeholder="Комментарии">
+                    <button type="submit" class="form__btn">подписаться</button>
+                </form>
+                <div class="form__message-box">
+                    <div class="form__check-mark"></div>
+                    <div>Благодарим за подписку!</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__left">
+                    <a href="#" class="footer__logo">LOGOTYPE</a>
+                    <div class="footer__address">
+                        г. Москва, метро Бауманская, ул. Бауманская, дом 44
+                    </div>
+                    <a href="tel:+7 000 000 00 00">+7 000 000 00 00</a>
+                </div>
+                <div class="footer__right">
+                    <div class="footer__links">
+                        <a href="#">О компании</a>
+                        <a href="#">Партнёрская программа</a>
+                        <a href="#">Реклама</a>
+                        <a href="#">Пресс-центр</a>
+                        <a href="#">Вакансии</a>
+                        <a href="#">Помощь</a>
+                        <a href="#">Правила</a>
+                    </div>
+                    <div class="footer__social">
+                        <div class="footer__social-wrapper">
+                            <div>Мы в соц. сетях</div>
+                            <a href="#"><img src="./images/facebook-letter-logo.svg" alt=""></a>
+                            <a href="#"><img src="./images/odnoklassniki.svg" alt=""></a>
+                            <a href="#"><img src="./images/instagram-logo.svg" alt=""></a>
+                        </div>
+                        <div class="footer__news-subscription">
+                            <div>подписка на новости</div>
+                            <form>
+                                <input class="footer__subscribe-input" type="text">
+                                <button class="footer__subscribe-btn" type="submit">Ok</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="bot-footer">
+            <div class="container">
+                <div class="bot-footer__inner">
+                    <div class="bot-footer__company">© ООО «Глобус», 2016 — 2019</div>
+                    <div>Политика конфиденциальности <span>Cookies</span></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    <script src="./script/fotorama.js"></script>
+    <script src="./script/index.js"></script>
+
+
+</body>
+
+</html>
