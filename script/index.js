@@ -1,4 +1,4 @@
-// Фиксация шапки при скролле
+// fixed header
 
 window.onscroll = () => {
     let header = document.querySelector('.header')

@@ -5,8 +5,6 @@ $('#fotorama').fotorama({
     fit: 'cover'
 });
 
-
-
 $(window).on('resize load', function(){
     if ($(window).innerWidth() <= 320){
         $('#fotorama').fotorama({
