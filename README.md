@@ -1,2 +1,0 @@
-# GruppaGuta
-# GruppaGuta
