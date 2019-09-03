@@ -145,6 +145,7 @@ header {
                 color: #000;
             }
         }
+
         .submenuShow {
             margin-top: -2px;
             display: block;
@@ -418,41 +419,55 @@ header {
             flex-wrap: wrap;
             justify-content: space-between;
 
-            .form__name,
-            .form__email,
-            .form__comment {
-                outline: none;
-                border: 1px solid #14A5DA;
-                border-radius: 4px;
-                margin-top: 48px;
+            label {
                 position: relative;
+                .form__name,
+                .form__email,
+                .form__comment {
+                    outline: none;
+                    border: 1px solid #14A5DA;
+                    border-radius: 4px;
+                    margin-top: 48px;
+                }
+
+                .form__name,
+                .form__email {
+                    width: 270px;
+                    height: 40px;
+                }
+
+                .form__comment {
+                    width: 570px;
+                    height: 128px;
+                }
+
+                .form__name:focus {
+                    background-color: #e2f4fb;
+                }
+
+                .form__email:focus {
+                    background-color: #e2f4fb;
+                }
+
+                .form__comment:focus {
+                    background-color: #e2f4fb;
+                }
+
             }
 
-            .error {
-                border: 1px solid #E76400;
+            .error-message{
+                input {
+                    border: 1px solid #E76400;
+                }
             }
 
-            .form__name,
-            .form__email {
-                width: 270px;
-                height: 40px;
-            }
-
-            .form__comment {
-                width: 570px;
-                height: 128px;
-            }
-
-            .form__name:focus {
-                background-color: #e2f4fb;
-            }
-
-            .form__email:focus {
-                background-color: #e2f4fb;
-            }
-
-            .form__comment:focus {
-                background-color: #e2f4fb;
+            .error-message::before{
+                content: 'Заполните поле';
+                color: #E76400;
+                position: absolute;
+                left: 0;
+                top: 25px;
+                font-size: 12px;
             }
 
             button {
@@ -887,6 +902,11 @@ header {
                     width: 220px;
                     height: 40px;
                 }
+            }
+
+            .error-message::before{
+                
+                top: -20px; 
             }
 
             .form__message-box {

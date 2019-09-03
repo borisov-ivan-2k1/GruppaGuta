@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -289,29 +290,37 @@ header {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between; }
-      .mailing__inner .form .form__name,
-      .mailing__inner .form .form__email,
-      .mailing__inner .form .form__comment {
-        outline: none;
-        border: 1px solid #14A5DA;
-        border-radius: 4px;
-        margin-top: 48px;
+      .mailing__inner .form label {
         position: relative; }
-      .mailing__inner .form .error {
+        .mailing__inner .form label .form__name,
+        .mailing__inner .form label .form__email,
+        .mailing__inner .form label .form__comment {
+          outline: none;
+          border: 1px solid #14A5DA;
+          border-radius: 4px;
+          margin-top: 48px; }
+        .mailing__inner .form label .form__name,
+        .mailing__inner .form label .form__email {
+          width: 270px;
+          height: 40px; }
+        .mailing__inner .form label .form__comment {
+          width: 570px;
+          height: 128px; }
+        .mailing__inner .form label .form__name:focus {
+          background-color: #e2f4fb; }
+        .mailing__inner .form label .form__email:focus {
+          background-color: #e2f4fb; }
+        .mailing__inner .form label .form__comment:focus {
+          background-color: #e2f4fb; }
+      .mailing__inner .form .error-message input {
         border: 1px solid #E76400; }
-      .mailing__inner .form .form__name,
-      .mailing__inner .form .form__email {
-        width: 270px;
-        height: 40px; }
-      .mailing__inner .form .form__comment {
-        width: 570px;
-        height: 128px; }
-      .mailing__inner .form .form__name:focus {
-        background-color: #e2f4fb; }
-      .mailing__inner .form .form__email:focus {
-        background-color: #e2f4fb; }
-      .mailing__inner .form .form__comment:focus {
-        background-color: #e2f4fb; }
+      .mailing__inner .form .error-message::before {
+        content: 'Заполните поле';
+        color: #E76400;
+        position: absolute;
+        left: 0;
+        top: 25px;
+        font-size: 12px; }
       .mailing__inner .form button {
         padding: 11px 77px;
         outline: none;
@@ -597,6 +606,8 @@ header {
       padding: 0;
       width: 220px;
       height: 40px; }
+  .mailing .mailing__inner .error-message::before {
+    top: -20px; }
   .mailing .mailing__inner .form__message-box {
     width: 290px;
     height: 420px; }

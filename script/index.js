@@ -27,21 +27,28 @@ formBtn.addEventListener('click', (e) => {
     const emailInput = document.querySelector('.form__email')
     const commentInput = document.querySelector('.form__comment')
     const messageBox = document.querySelector('.form__message-box')
+    const labels = document.querySelectorAll('label')
 
     e.preventDefault()
 
     if (!nameInput.value) {
-        nameInput.classList.add('error')
+        // nameInput.classList.add('error')
+        labels[0].classList.add('error-message')
     } else if (!emailInput.value) {
-        emailInput.classList.add('error')
+        // emailInput.classList.add('error')
+        labels[1].classList.add('error-message')
         return false
     } else if (!commentInput.value) {
-        commentInput.classList.add('error')
+        // commentInput.classList.add('error')
+        labels[2].classList.add('error-message')
         return false
     } else {
-        nameInput.classList.remove('error')
-        emailInput.classList.remove('error')
-        commentInput.classList.remove('error')
+        // nameInput.classList.remove('error')
+        // emailInput.classList.remove('error')
+        // commentInput.classList.remove('error')
+        for ( i = 0; i < labels.length; i++){
+            labels[i].classList.remove('error-message')
+        }
         messageBox.style.display = 'flex'
     }
 
