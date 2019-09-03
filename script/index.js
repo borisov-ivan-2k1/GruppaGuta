@@ -47,6 +47,19 @@ formBtn.addEventListener('click', (e) => {
 
 })
 
+//submenu
+
+const menu = document.querySelectorAll('.bot-header__menu-item')
+const submenu = document.querySelector('.submenu')
+
+
+menu[2].addEventListener("mouseenter", () => {
+    submenu.classList.add('submenuShow')
+}, false);
+submenu.addEventListener("mouseleave", () => {
+    submenu.classList.remove('submenuShow')
+}, false);
+
 //burger menu
 
 const menuBtn = document.querySelector('.bot-header__burger-menu')

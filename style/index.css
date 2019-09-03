@@ -83,6 +83,25 @@ header {
           font-size: 12px;
           font-weight: 600;
           color: #000; }
+    header .bot-header .submenu {
+      display: none;
+      border-top: 1px solid #CECECE; }
+      header .bot-header .submenu__wrapper {
+        min-height: 120px;
+        max-width: 466px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin: 0 auto;
+        align-content: space-evenly; }
+      header .bot-header .submenu a {
+        margin-right: 40px;
+        text-decoration: none;
+        font-size: 14px;
+        color: #000; }
+    header .bot-header .submenuShow {
+      margin-top: -2px;
+      display: block; }
 
 .slider .slide__text {
   min-height: 245px;
@@ -259,9 +278,11 @@ header {
         top: 10px;
         left: 10px; }
       .mailing__inner .mailing__top-form span {
+        margin-left: -78px;
         font-size: 20px;
         text-transform: uppercase;
-        padding-top: 42px; }
+        padding-top: 42px;
+        font-weight: 600; }
     .mailing__inner .form {
       max-width: 570px;
       margin: 0 auto;
@@ -273,7 +294,9 @@ header {
       .mailing__inner .form .form__comment {
         outline: none;
         border: 1px solid #14A5DA;
-        border-radius: 4px; }
+        border-radius: 4px;
+        margin-top: 48px;
+        position: relative; }
       .mailing__inner .form .error {
         border: 1px solid #E76400; }
       .mailing__inner .form .form__name,
@@ -281,7 +304,6 @@ header {
         width: 270px;
         height: 40px; }
       .mailing__inner .form .form__comment {
-        margin-top: 45px;
         width: 570px;
         height: 128px; }
       .mailing__inner .form .form__name:focus {
@@ -455,7 +477,7 @@ header {
       .bot-header .container .bot-header__inner .bot-header__logo {
         padding-bottom: 0; }
       .bot-header .container .bot-header__inner .bot-header__menu {
-        left: -320px;
+        left: -700px;
         top: 64px;
         z-index: 99;
         background-color: #fff;
@@ -464,8 +486,6 @@ header {
         flex-direction: column;
         align-items: center;
         transition: 0.5s; }
-        .bot-header .container .bot-header__inner .bot-header__menu a:hover .submenu {
-          display: none; }
         .bot-header .container .bot-header__inner .bot-header__menu a:after {
           display: none;
           transition: none; }
@@ -495,6 +515,17 @@ header {
         background-image: url(../images/close.svg); }
       .bot-header .container .bot-header__inner .bot-header__register-login {
         display: none; }
+
+  .slider .slide__text {
+    justify-content: space-evenly; }
+    .slider .slide__text span {
+      padding: 7px 12px;
+      font-size: 8px;
+      width: 52px; }
+    .slider .slide__text h2 {
+      font-size: 16px; }
+    .slider .slide__text p {
+      font-size: 14px; }
 
   .about-company .about-company__separator {
     flex-direction: column; }
@@ -554,7 +585,8 @@ header {
     .mailing .mailing__inner .form .form__name,
     .mailing .mailing__inner .form .form__email {
       max-width: 220px;
-      height: 32px; }
+      height: 32px;
+      margin-top: 0; }
     .mailing .mailing__inner .form .form__comment {
       max-width: 220px;
       height: 128px;
