@@ -23,35 +23,26 @@ showMoreBtn.addEventListener('click', (e) => {
 const formBtn = document.querySelector('.form__btn')
 
 formBtn.addEventListener('click', (e) => {
-    const nameInput = document.querySelector('.form__name')
-    const emailInput = document.querySelector('.form__email')
-    const commentInput = document.querySelector('.form__comment')
+    
     const messageBox = document.querySelector('.form__message-box')
     const labels = document.querySelectorAll('label')
 
     e.preventDefault()
 
-    if (!nameInput.value) {
-        // nameInput.classList.add('error')
+      if(!labels[0].children[0].value){
         labels[0].classList.add('error-message')
-    } else if (!emailInput.value) {
-        // emailInput.classList.add('error')
+    } else if (!labels[1].children[0].value) {
         labels[1].classList.add('error-message')
         return false
-    } else if (!commentInput.value) {
-        // commentInput.classList.add('error')
+    } else if (!labels[2].children[0].value) {
         labels[2].classList.add('error-message')
         return false
     } else {
-        // nameInput.classList.remove('error')
-        // emailInput.classList.remove('error')
-        // commentInput.classList.remove('error')
-        for ( i = 0; i < labels.length; i++){
+        for (i = 0; i < labels.length; i++) {
             labels[i].classList.remove('error-message')
         }
         messageBox.style.display = 'flex'
     }
-
 })
 
 //submenu
@@ -75,9 +66,11 @@ menuBtn.addEventListener('click', (e) => {
     const menu = document.querySelector('.bot-header__menu')
     e.preventDefault()
     if (!menu.classList.contains('bot__header-menu_active')) {
+        document.body.style.overflow = 'hidden'
         menu.classList.add('bot__header-menu_active')
         menuBtn.classList.add('bot-header__burger-menu_active')
     } else {
+        document.body.style.overflow = 'auto'
         menu.classList.remove('bot__header-menu_active')
         menuBtn.classList.remove('bot-header__burger-menu_active')
     }
